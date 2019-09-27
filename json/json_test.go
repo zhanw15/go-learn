@@ -1,8 +1,11 @@
-package main
+package json
 
-import "hu/json"
+import (
+	"hu/json"
+	"testing"
+)
 
-func main() {
+func TestJson(t *testing.T) {
 	json.Firstencod()
 	json.Secondencod()
 	json.Thirdencod()
