@@ -1,2 +1,2 @@
 .idea
-file/testdata/**
+**/testdata/**

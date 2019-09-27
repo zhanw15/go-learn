@@ -1,4 +1,4 @@
-package main
+package example
 
 import (
 	"fmt"
@@ -19,7 +19,7 @@ type data struct {
 	Info [7]string
 }
 
-func main()  {
+func ExampleFile()  {
 	start := time.Now()
 	fmt.Println("work started!")
 
@@ -100,6 +100,7 @@ func (w *Worker) work(b bool) {
 	}
 }
 
+// 排序接口
 type DataType []data
 
 func (a DataType) Len() int {
@@ -116,7 +117,6 @@ func (a DataType) Less(i, j int) bool {
 		i1, _ := strconv.Atoi(a[i].Info[1])
 		i2, _ := strconv.Atoi(a[j].Info[1])
 		return i1 < i2
-
 	}
 	return a[i].Info[0] < a[j].Info[0]
 }
@@ -130,7 +130,7 @@ func ouShu(s string) bool{
 		return n%2==0
 	}
 	switch s {
-		case "a", "c", "e": return true
+	case "a", "c", "e": return true
 	}
 	return false
 }
