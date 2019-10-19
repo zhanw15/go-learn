@@ -1,4 +1,4 @@
-package example
+package main
 
 import (
 	"fmt"
@@ -19,7 +19,7 @@ type data struct {
 	Info [7]string
 }
 
-func ExampleFile()  {
+func main()  {
 	start := time.Now()
 	fmt.Println("work started!")
 
